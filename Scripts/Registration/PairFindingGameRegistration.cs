@@ -10,7 +10,7 @@ namespace PairFindingGame
     {
         [SerializeField] private GameConfigurationService ConfigurationService;
         
-        protected override void RegisterServices(IRegistrar registrar)
+        protected override void RegisterServices(IServicesRegistrar registrar)
         {
             registrar.Register<IConfigurationService, GameConfigurationService>(ConfigurationService);
             registrar.Register<IGameService, PairFindingGame>();

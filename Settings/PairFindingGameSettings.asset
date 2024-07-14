@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1b08e96b6d256828f58a3a0e066189, type: 3}
   m_Name: PairFindingGameSettings
   m_EditorClassIdentifier: 
-  LinesPattern: 03000000040000000400000003000000
-  ElementSize: {x: 76, y: 76}
+  LinesPattern: 04000000040000000400000004000000
+  ElementSize: {x: 88, y: 88}
   OpenedShowTime: 1
   ElementTypes:
-  - {fileID: 21300000, guid: fe2294b5b0e9d4476b7f6e51c9aa40c7, type: 3}
-  - {fileID: 21300000, guid: edd9a6740d3aa4f9b88133633e07cfc6, type: 3}
-  - {fileID: 21300000, guid: d325b1332fce54cba955284cb7fa0c8d, type: 3}
-  - {fileID: 21300000, guid: b12d3210584954d22870f850e72f24e6, type: 3}
-  - {fileID: 21300000, guid: c008143d75d264cfd907026e2baa3030, type: 3}
-  - {fileID: 21300000, guid: 65ee56712535742dc91a559ed8264988, type: 3}
-  - {fileID: 21300000, guid: bf430c472d0e141fa89fcf0727a6d671, type: 3}
+  - {fileID: 21300000, guid: b419652b2d7be4c639aec0de51f0a581, type: 3}
+  - {fileID: 21300000, guid: 83c2d27960c8b45ac98daebf053ce075, type: 3}
+  - {fileID: 21300000, guid: d9814b691a2694190aa4c6c7f22a1a7a, type: 3}
+  - {fileID: 21300000, guid: db97313b8461447968fafc1eb9884d62, type: 3}
+  - {fileID: 21300000, guid: c044120a0649546f69008dc415c50993, type: 3}
+  - {fileID: 21300000, guid: 1c2a35d7aafa142bfb62579c2b8233e4, type: 3}
+  - {fileID: 21300000, guid: 454590c5be17b441abf73e51042726f8, type: 3}
+  - {fileID: 21300000, guid: 2b98eeed408f848159236aee87af4d7e, type: 3}
+  - {fileID: 21300000, guid: 582439be2dd7a4acf9826fc3002ef637, type: 3}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d74797ef94ef9c93a485bc336334a4, type: 3}
   m_Name: PairFindingScoresSettings
   m_EditorClassIdentifier: 
-  ScoresForMove: 10
-  ScoresForPair: 50
+  ScoresForMove: 5
+  ScoresForPair: 15

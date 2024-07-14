@@ -9,7 +9,7 @@ namespace Infrastructure.Common
             public const string CollectPairFindingConfiguration = "Tools/Collect Pair Finding Game Configuration Settings";
         }
 
-        public static partial class Configurations
+        public static partial class Configuration
         {
             public const string PairFindingGameConfiguration = "_GameConfiguration";
         }

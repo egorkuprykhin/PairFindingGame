@@ -11,7 +11,7 @@ namespace PairFindingGame.Editor.Tools
         [MenuItem(Constants.Tools.AssignPairFindingGameScripts)]
         public static void AssignScriptsToConfigs()
         {
-            AssignScriptsProcessor.ProcessAsset<Configuration>(Constants.Configurations.PairFindingGameConfiguration);
+            AssignScriptsProcessor.ProcessAsset<Configuration>(Constants.Configuration.PairFindingGameConfiguration);
             AssignScriptsProcessor.ProcessAsset<PairFindingGameSettings>();
             AssignScriptsProcessor.ProcessAsset<PairFindingAnimationSettings>();
             AssignScriptsProcessor.ProcessAsset<PairFindingScoresSettings>();

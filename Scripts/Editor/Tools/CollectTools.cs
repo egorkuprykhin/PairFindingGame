@@ -11,7 +11,7 @@ namespace PairFindingGame.Editor.Tools
         [MenuItem(Constants.Tools.CollectPairFindingConfiguration)]
         public static void CollectPairFindingGameConfiguration()
         {
-            var configuration = EditorExtensions.GetSingleByName<Configuration>(Constants.Configurations.PairFindingGameConfiguration);
+            var configuration = EditorExtensions.GetSingleByName<Configuration>(Constants.Configuration.PairFindingGameConfiguration);
             if (configuration)
             {
                 var assetPath = AssetDatabase.GetAssetPath(configuration);

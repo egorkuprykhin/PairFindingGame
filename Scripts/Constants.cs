@@ -10,7 +10,7 @@ namespace Infrastructure.Common
             public static class Tools
             {
                 public const string AssignGameScripts = "Tools/Assign Game Scripts To Configs";
-                public const string CollectGameConfiguration = "Tools/Collect Game Configuration Settings";
+                public const string BuildGameConfiguration = "Tools/Build Game Configuration";
                 public const string BuildGameLogic = "Tools/Build Game Logic";
             }
         }

@@ -6,9 +6,9 @@ using Logger = Editor.Logger;
 
 namespace PairFindingGame.Editor.Tools
 {
-    public static class CollectGameConfigurationTool
+    public static class BuildGameConfigurationTool
     {
-        [MenuItem(Constants.PairFinding.Tools.CollectGameConfiguration)]
+        [MenuItem(Constants.PairFinding.Tools.BuildGameConfiguration)]
         public static void CollectPairFindingGameConfiguration()
         {
             var configuration = EditorExtensions.GetSingleByName<Configuration>(Constants.PairFinding.GameConfiguration);

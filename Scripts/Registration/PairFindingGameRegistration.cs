@@ -8,11 +8,11 @@ namespace PairFindingGame
 {
     public class PairFindingGameRegistration : RegistrationBase
     {
-        [SerializeField] private GameConfigurationService ConfigurationService;
+        [SerializeField] public GameConfigurationService GameConfigurationService;
         
         protected override void RegisterServices(IServicesRegistrar registrar)
         {
-            registrar.Register<IConfigurationService, GameConfigurationService>(ConfigurationService);
+            registrar.Register<IConfigurationService, GameConfigurationService>(GameConfigurationService);
             registrar.Register<IGameService, PairFindingGame>();
             registrar.Register<ChipTypesService>();
         }

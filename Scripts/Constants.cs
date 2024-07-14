@@ -3,17 +3,17 @@ namespace Infrastructure.Common
     public static partial class Constants
     {
 #if UNITY_EDITOR
-        public static partial class Tools
+        public static class PairFinding
         {
-            public const string AssignPairFindingGameScripts = "Tools/Assign Pair Finding Game Scripts To Configs";
-            public const string CollectPairFindingConfiguration = "Tools/Collect Pair Finding Game Configuration Settings";
+            public const string GameConfiguration = "_GameConfiguration";
+            
+            public static class Tools
+            {
+                public const string AssignGameScripts = "Tools/Assign Game Scripts To Configs";
+                public const string CollectGameConfiguration = "Tools/Collect Game Configuration Settings";
+                public const string BuildGameLogic = "Tools/Build Game Logic";
+            }
         }
-
-        public static partial class Configuration
-        {
-            public const string PairFindingGameConfiguration = "_GameConfiguration";
-        }
-
 #endif
     }
 }

@@ -9,7 +9,8 @@ namespace PairFindingGame
 {
     public class GameConfigurationService : MonoService, IConfigurationService, IInitializableService
     {
-        [SerializeField] private Configuration GameConfiguration;
+        [SerializeField] public Configuration GameConfiguration;
+        
         public ConfigurationProxy Configuration { get; private set; }
 
         public void Initialize()

@@ -6,12 +6,12 @@ using Logger = Editor.Logger;
 
 namespace PairFindingGame.Editor.Tools
 {
-    public static class CollectTools
+    public static class CollectGameConfigurationTool
     {
-        [MenuItem(Constants.Tools.CollectPairFindingConfiguration)]
+        [MenuItem(Constants.PairFinding.Tools.CollectGameConfiguration)]
         public static void CollectPairFindingGameConfiguration()
         {
-            var configuration = EditorExtensions.GetSingleByName<Configuration>(Constants.Configuration.PairFindingGameConfiguration);
+            var configuration = EditorExtensions.GetSingleByName<Configuration>(Constants.PairFinding.GameConfiguration);
             if (configuration)
             {
                 var assetPath = AssetDatabase.GetAssetPath(configuration);

@@ -8,10 +8,10 @@ namespace PairFindingGame.Editor.Tools
 {
     public static class AssignGameScriptsTool
     {
-        [MenuItem(Constants.Tools.AssignPairFindingGameScripts)]
+        [MenuItem(Constants.PairFinding.Tools.AssignGameScripts)]
         public static void AssignScriptsToConfigs()
         {
-            AssignScriptsProcessor.ProcessAsset<Configuration>(Constants.Configuration.PairFindingGameConfiguration);
+            AssignScriptsProcessor.ProcessAsset<Configuration>(Constants.PairFinding.GameConfiguration);
             AssignScriptsProcessor.ProcessAsset<PairFindingGameSettings>();
             AssignScriptsProcessor.ProcessAsset<PairFindingAnimationSettings>();
             AssignScriptsProcessor.ProcessAsset<PairFindingScoresSettings>();

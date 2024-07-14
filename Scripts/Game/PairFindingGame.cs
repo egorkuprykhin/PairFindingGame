@@ -19,7 +19,7 @@ namespace PairFindingGame
         private IConfigurationService _configurationService;
         private PairFindingGameFactory _factory;
         private ScoresService _scoresService;
-        private SfxService _sfxService;
+        private SoundService _soundService;
         private CoreFinisherService _coreFinisher;
         private ChipTypesService _chipTypesService;
         private GameSceneDataService _sceneDataService;
@@ -33,7 +33,7 @@ namespace PairFindingGame
             _configurationService = ServiceLocator.GetService<IConfigurationService>();
             _factory = ServiceLocator.GetService<PairFindingGameFactory>();
             _scoresService = ServiceLocator.GetService<ScoresService>();
-            _sfxService = ServiceLocator.GetService<SfxService>();
+            _soundService = ServiceLocator.GetService<SoundService>();
             _coreFinisher = ServiceLocator.GetService<CoreFinisherService>();
             _chipTypesService = ServiceLocator.GetService<ChipTypesService>();
             _sceneDataService = ServiceLocator.GetService<GameSceneDataService>();
@@ -146,7 +146,7 @@ namespace PairFindingGame
 
         private void OnElementChipClosed(ElementView element)
         {
-            _sfxService.PlaySfx(_sfxSettings.CloseChip);
+            _soundService.PlaySfx(_sfxSettings.CloseChip);
         }
 
         private void FindPair(ElementView element)
@@ -174,13 +174,13 @@ namespace PairFindingGame
         private void OnPairFind()
         {
             _scoresService.AddScores(_scoresSettings.ScoresForPair);
-            _sfxService.PlaySfx(_sfxSettings.PairFind);
+            _soundService.PlaySfx(_sfxSettings.PairFind);
         }
 
         private void OnMove()
         {
             _scoresService.AddScores(_scoresSettings.ScoresForMove);
-            _sfxService.PlaySfx(_sfxSettings.OpenChip);
+            _soundService.PlaySfx(_sfxSettings.OpenChip);
         }
 
         private bool HasPair(ElementView element) => 

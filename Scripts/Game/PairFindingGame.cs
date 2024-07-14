@@ -25,7 +25,7 @@ namespace PairFindingGame
         private GameSceneDataService _sceneDataService;
 
         private PairFindingGameSettings _gameSettings;
-        private PairFindingSfxSettings _sfxSettings;
+        private PairFindingSoundSettings _soundSettings;
         private PairFindingScoresSettings _scoresSettings;
 
         public void Initialize()
@@ -39,7 +39,7 @@ namespace PairFindingGame
             _sceneDataService = ServiceLocator.GetService<GameSceneDataService>();
 
             _gameSettings = _configurationService.Configuration.GetSettings<PairFindingGameSettings>();
-            _sfxSettings = _configurationService.Configuration.GetSettings<PairFindingSfxSettings>();
+            _soundSettings = _configurationService.Configuration.GetSettings<PairFindingSoundSettings>();
             _scoresSettings = _configurationService.Configuration.GetSettings<PairFindingScoresSettings>();
         }
 
@@ -146,7 +146,7 @@ namespace PairFindingGame
 
         private void OnElementChipClosed(ElementView element)
         {
-            _soundService.PlaySfx(_sfxSettings.CloseChip);
+            _soundService.PlaySound(_soundSettings.CloseChip);
         }
 
         private void FindPair(ElementView element)
@@ -174,13 +174,13 @@ namespace PairFindingGame
         private void OnPairFind()
         {
             _scoresService.AddScores(_scoresSettings.ScoresForPair);
-            _soundService.PlaySfx(_sfxSettings.PairFind);
+            _soundService.PlaySound(_soundSettings.PairFind);
         }
 
         private void OnMove()
         {
             _scoresService.AddScores(_scoresSettings.ScoresForMove);
-            _soundService.PlaySfx(_sfxSettings.OpenChip);
+            _soundService.PlaySound(_soundSettings.OpenChip);
         }
 
         private bool HasPair(ElementView element) => 

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4a6a869f70f40ad8bf23fd07bb30d85, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f1b08e96b6d256828f58a3a0e066189, type: 3}
   m_Name: PairFindingGameSettings
   m_EditorClassIdentifier: 
   LinesPattern: 03000000040000000400000003000000

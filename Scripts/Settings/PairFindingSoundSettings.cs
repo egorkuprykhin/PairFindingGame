@@ -4,7 +4,7 @@ using UnityEngine;
 namespace PairFindingGame
 {
     [CreateAssetMenu(fileName = "PairFindingSfxSettings")]
-    public class PairFindingSfxSettings : SettingsBase
+    public class PairFindingSoundSettings : SettingsBase
     {
         public AudioClip OpenChip;
         public AudioClip CloseChip;

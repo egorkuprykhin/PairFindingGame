@@ -116,7 +116,7 @@ namespace PairFindingGame
         private void CheckWinGame()
         {
             if (_createdElements.Count > 0 && _createdElements.All(element => element.Opened)) 
-                _coreFinisher.FinishGame();
+                _coreFinisher.WinGame();
         }
 
         private void SubscribeElement(ElementView element)
